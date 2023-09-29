@@ -10,4 +10,4 @@ npm i dotenv
 npm install dotenv
 ```
 
-rename the envFile to .env only
+NOTE: rename the envFile to .env only

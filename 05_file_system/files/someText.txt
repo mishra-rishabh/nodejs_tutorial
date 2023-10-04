@@ -1,0 +1,3 @@
+promise way of writing a file
+This will not overwrite the content and add the new content everytime
+This is an appended content

@@ -40,6 +40,7 @@ exports.postRequest = async (req, res) => {
             
             req.animes.push(body);
             writeToFile(req.animes)
+            
             res.writeHead(201, {"Content-Type": "application/json"});
             res.end(JSON.stringify({
                 title: "201 Created",
@@ -47,6 +48,7 @@ exports.postRequest = async (req, res) => {
             }));
         } catch (error) {
             console.log(error);
+            
             res.writeHead(400, {"Content-Type": "application.json"});
             res.end(JSON.stringify({
                 title: "Validation Failed!",
@@ -58,3 +60,67 @@ exports.postRequest = async (req, res) => {
         res.end(JSON.stringify({title: "Not Found", message: "Route Not Found!"})); 
     }
 };
+
+exports.deleteRequest = (req, res) => {
+    let baseUrl = req.url.substring(0, req.url.lastIndexOf("/") + 1);
+    const id = req.url.split("/")[3];
+
+    if(baseUrl === "/api/animes/" && id) {
+        const index = req.animes.findIndex((anime) => {
+            return anime.id == id;
+        });
+
+        if(index === -1) {
+            res.statusCode = 404;
+            res.write(JSON.stringify({title: "404 Not Found", message: "Anime Not Found!"}));
+            res.end();
+        } else {
+            req.animes.splice(index, 1);
+            writeToFile(req.animes);
+
+            res.writeHead(204, {"Content-Type": "application/json"});
+            res.end(JSON.stringify(req.animes));
+        }
+    } else {
+        res.writeHead(404, {"Content-Type": "application/json"});
+        res.end(JSON.stringify({title: "Not Found", message: "Route Not Found!"})); 
+    }
+};
+
+exports.putRequest = async (req, res) => {
+    let baseUrl = req.url.substring(0, req.url.lastIndexOf("/") + 1);
+    const id = req.url.split("/")[3];
+
+    if(baseUrl === "/api/animes/" && id) {
+        try {
+            let body = await bodyParser(req);
+
+            const index = req.animes.findIndex((anime) => {
+                return anime.id == id;
+            });
+            
+            if(index === -1) {
+                res.statusCode = 404;
+                res.write(JSON.stringify({title: "404 Not Found", message: "Anime Not Found!"}));
+                res.end();
+            } else {
+                req.animes[index] = {id, ...body};
+                writeToFile(req.animes);
+
+                res.writeHead(200, {"Content-Type": "application/json"});
+                res.end(JSON.stringify(req.animes[index]));
+            }
+        } catch (error) {
+            console.log(error);
+            
+            res.writeHead(400, {"Content-Type": "application.json"});
+            res.end(JSON.stringify({
+                title: "Validation Failed!",
+                message: "Request body is invalid!"
+            }));
+        }
+    } else {
+        res.writeHead(404, {"Content-Type": "application/json"});
+        res.end(JSON.stringify({title: "Not Found", message: "Route Not Found!"})); 
+    }
+}

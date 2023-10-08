@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const {getRequest, postRequest} = require("./methods/http_methods");
+const {getRequest, postRequest, deleteRequest, putRequest} = require("./methods/http_methods");
 let animes = require("./data/anime.json")
 
 const http = require("http");

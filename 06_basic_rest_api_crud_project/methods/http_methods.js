@@ -1,3 +1,6 @@
+const bodyParser = require("../utils/body_parser");
+const writeToFile = require("../utils/write_to_file");
+
 exports.getRequest = (req, res) => {
     let baseUrl = req.url.substring(0, req.url.lastIndexOf("/") + 1);
     const id = req.url.split("/")[3];
@@ -28,4 +31,30 @@ exports.getRequest = (req, res) => {
       res.writeHead(404, {"Content-Type": "application/json"});
       res.end(JSON.stringify({title: "Not Found", message: "Route Not Found!"})); 
     }
-}
+};
+
+exports.postRequest = async (req, res) => {
+    if(req.url === "/api/animes") {
+        try {
+            let body = await bodyParser(req);
+            
+            req.animes.push(body);
+            writeToFile(req.animes)
+            res.writeHead(201, {"Content-Type": "application/json"});
+            res.end(JSON.stringify({
+                title: "201 Created",
+                message: "Anime added successfully"
+            }));
+        } catch (error) {
+            console.log(error);
+            res.writeHead(400, {"Content-Type": "application.json"});
+            res.end(JSON.stringify({
+                title: "Validation Failed!",
+                message: "Request body is invalid!"
+            }));
+        }
+    } else {
+        res.writeHead(404, {"Content-Type": "application/json"});
+        res.end(JSON.stringify({title: "Not Found", message: "Route Not Found!"})); 
+    }
+};

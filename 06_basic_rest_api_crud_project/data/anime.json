@@ -1,94 +1,109 @@
 [
-    {
-      "id": 1,
-      "title": "Fullmetal Alchemist: Brotherhood",
-      "year": 2009,
-      "image": "https://i.imgur.com/46c2k7h.jpg",
-      "studio": "Bones",
-      "genre": "Action, Adventure, Drama, Fantasy",
-      "rating": 9.1,
-      "cast": [
-        "Romi Park",
-        "Hiroshi Kamiya",
-        "Jun Fukuyama",
-        "Maaya Sakamoto",
-        "Yasuhiro Takato",
-        "Daisuke Sakaguchi",
-        "Toshio Furukawa",
-        "Kenji Utsumi"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Attack on Titan",
-      "year": 2013,
-      "image": "https://i.imgur.com/v66fKq0.jpg",
-      "studio": "WIT Studio",
-      "genre": "Action, Dark Fantasy, Mystery, Post-Apocalyptic",
-      "rating": 8.9,
-      "cast": [
-        "Yuki Kaji",
-        "Marina Inoue",
-        "Yui Ishikawa",
-        "Daisuke Ono",
-        "Hiroshi Kamiya",
-        "Kaito Ishikawa",
-        "Hiroyuki Kagura",
-        "Shiori Mikami"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Neon Genesis Evangelion",
-      "year": 1995,
-      "image": "https://i.imgur.com/32s8x5n.jpg",
-      "studio": "Gainax",
-      "genre": "Action, Drama, Mecha, Psychological, Sci-Fi",
-      "rating": 8.8,
-      "cast": [
-        "Megumi Hayashibara",
-        "Megumi Ogata",
-        "Yuko Miyamura",
-        "Kotono Mitsuishi",
-        "Junko Iwao",
-        "Kappei Yamaguchi",
-        "Rei Sakakibara"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Code Geass: Lelouch of the Rebellion",
-      "year": 2006,
-      "image": "https://i.imgur.com/yQvF2oW.jpg",
-      "studio": "Sunrise",
-      "genre": "Action, Drama, Mecha, Military, Sci-Fi",
-      "rating": 8.7,
-      "cast": [
-        "Jun Fukuyama",
-        "Yukana",
-        "Chiaki Morishita",
-        "Takahiro Sakurai",
-        "Miki Itou",
-        "Junichi Suwabe",
-        "Sayaka Ohara",
-        "Takahiro Sakurai"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Cowboy Bebop",
-      "year": 1998,
-      "image": "https://i.imgur.com/9X14Y8k.jpg",
-      "studio": "Sunrise",
-      "genre": "Action, Adventure, Sci-Fi, Space Western",
-      "rating": 8.9,
-      "cast": [
-        "Kōichi Yamadera",
-        "Unshō Ishizuka",
-        "Megumi Hayashibara",
-        "Wataru Takagi",
-        "Aoi Tada"
-      ]
-    }
+  {
+    "id": 1,
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "year": 2009,
+    "image": "https://i.imgur.com/46c2k7h.jpg",
+    "studio": "Bones",
+    "genre": "Action, Adventure, Drama, Fantasy",
+    "rating": 9.1,
+    "cast": [
+      "Romi Park",
+      "Hiroshi Kamiya",
+      "Jun Fukuyama",
+      "Maaya Sakamoto",
+      "Yasuhiro Takato",
+      "Daisuke Sakaguchi",
+      "Toshio Furukawa",
+      "Kenji Utsumi"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Attack on Titan",
+    "year": 2013,
+    "image": "https://i.imgur.com/v66fKq0.jpg",
+    "studio": "WIT Studio",
+    "genre": "Action, Dark Fantasy, Mystery, Post-Apocalyptic",
+    "rating": 8.9,
+    "cast": [
+      "Yuki Kaji",
+      "Marina Inoue",
+      "Yui Ishikawa",
+      "Daisuke Ono",
+      "Hiroshi Kamiya",
+      "Kaito Ishikawa",
+      "Hiroyuki Kagura",
+      "Shiori Mikami"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Neon Genesis Evangelion",
+    "year": 1995,
+    "image": "https://i.imgur.com/32s8x5n.jpg",
+    "studio": "Gainax",
+    "genre": "Action, Drama, Mecha, Psychological, Sci-Fi",
+    "rating": 8.8,
+    "cast": [
+      "Megumi Hayashibara",
+      "Megumi Ogata",
+      "Yuko Miyamura",
+      "Kotono Mitsuishi",
+      "Junko Iwao",
+      "Kappei Yamaguchi",
+      "Rei Sakakibara"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Code Geass: Lelouch of the Rebellion",
+    "year": 2006,
+    "image": "https://i.imgur.com/yQvF2oW.jpg",
+    "studio": "Sunrise",
+    "genre": "Action, Drama, Mecha, Military, Sci-Fi",
+    "rating": 8.7,
+    "cast": [
+      "Jun Fukuyama",
+      "Yukana",
+      "Chiaki Morishita",
+      "Takahiro Sakurai",
+      "Miki Itou",
+      "Junichi Suwabe",
+      "Sayaka Ohara",
+      "Takahiro Sakurai"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cowboy Bebop",
+    "year": 1998,
+    "image": "https://i.imgur.com/9X14Y8k.jpg",
+    "studio": "Sunrise",
+    "genre": "Action, Adventure, Sci-Fi, Space Western",
+    "rating": 8.9,
+    "cast": [
+      "Kōichi Yamadera",
+      "Unshō Ishizuka",
+      "Megumi Hayashibara",
+      "Wataru Takagi",
+      "Aoi Tada"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Naruto",
+    "year": 1998,
+    "image": "https://i.imgur.com/9X14Y8k.jpg",
+    "studio": "Sunrise",
+    "genre": "Shonen",
+    "rating": 8.9,
+    "cast": [
+      "Kōichi Yamadera",
+      "Unshō Ishizuka",
+      "Megumi Hayashibara",
+      "Wataru Takagi",
+      "Aoi Tada"
+    ]
+  }
 ]
-  

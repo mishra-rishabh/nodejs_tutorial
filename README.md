@@ -16,3 +16,5 @@ Node.js is a popular choice for developing web applications, microservices, and 
 2 ways to initialize nodejs project:
 1. npm init -y: this command will setup a nodejs project with default values.
 2. npm init: this command will setup the node js project with the values that we give like, package name, version, description, etc.
+
+<b>npm: </b>npm is just like playstore and appstore of node. All the libraries are just like apps in playstore, We can just download and install the libraries to make use of it in our node app.

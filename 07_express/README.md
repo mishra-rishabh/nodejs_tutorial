@@ -9,7 +9,8 @@ Here are some of its key features:
 
 Overall, ExpressJS is a powerful and versatile framework that can be used to build a wide variety of web applications. It is a popular choice for developers of all skill levels, and it offers a number of features that make it easy to build secure, scalable, and maintainable web applications.
 
-<b>middleware:</b> middleware is some function that gets executed before all the routes, i.e., saare routes me se koi ek bhi route chale to uske pehle middleware chalega and usme likha code pehle execute hoga. We can make any number of middlewares in our code as per the requirement.
+<b>middleware:</b> middleware is some function that gets executed before all the routes, i.e., saare routes me se koi ek bhi route chale to uske pehle middleware chalega and usme likha code pehle execute hoga. We can make any number of middlewares in our code as per the requirement. Node ke sath ke dikkat hai ki agar ek baar bhi control kisi bhi middleware par gaya to control khud se agle route/middleware par nahi jayega, use agle par le jaane ke liye hume usko push karna padega and ye push karna next() ko chalana hota hai.
+
 
 <b>request (req):</b> request me saara data hota hai aane wale user ki request ki taraf ka, jaise ki uski location, device info, and other things.
 
